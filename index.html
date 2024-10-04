@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Resources/css/style.css" />
+    <link rel="shortcut icon" href="./Resources/images/earth.png" type="image/x-icon">
+  </head>
+  <body id="body">
+    <div class="home" id="top">
+    <!-- Nav -->
+      <nav class="navbar navbar-expand-sm" style="position: absolute; z-index: 999">
+
+      <a class="navbar-brand" href="index.html"
+        ><img
+          style="width: 5rem"
+          src="./Resources/images/earth.png"
+          alt="logo"
+      /></a>
+      <button
+        class="navbar-toggler bg-transparent text-light"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon text-danger"
+          ><i class="fa fa-bars"></i
+        ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"
+              >Home <span class="sr-only"></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+      <!-- Nav End -->
+
+      <!-- slide -->
+      <div class="slide">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./Resources/images/boat.jpg"
+                alt=".."
+                style="height: 100vh"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./Resources/images/all.jpg"
+                alt=".."
+                style="height: 100vh"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./Resources/images/house.jpg"
+                alt=".."
+                style="height: 100vh"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <!-- slide -->
+      <!-- main -->
+      <main>
+        <div class="des">
+          <div class="container-fluid mx-auto">
+            <div class="info">
+              <h1>XYZ Blogs</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquam rem amet fuga esse praesentium alias aperiam tenetur
+                eligendi reprehenderit quibusdam odio a velit, neque optio
+                voluptatibus ipsam voluptas nulla! Ipsam illo, porro accusantium
+                blanditiis, unde eveniet nulla corporis voluptatem est ipsum
+                voluptatibus vel! Aliquid perferendis nam maxime maiores
+                recusandae dicta.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="posts">
+        <div class="container ml-auto">
+          <h2>Recent Posts</h2>
+          <div class="row">
+            <div class=" col-md-4 mx-auto">
+              <div class="card rotate">
+                <img src="./Resources/images/all.jpg" class="card-img-top" alt=".." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a target="_blank"  href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-md-4">
+              <div class="card rotate" >
+                <img src="./Resources/images/all.jpg" class="card-img-top" alt=".." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a target="_blank"  href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rotate" >
+                <img src="./Resources/images/all.jpg" class="card-img-top" alt=".." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a target="_blank"  href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+            <div class="col-md-4">
+              <div class="card rotate" >
+                <img src="./Resources/images/all.jpg" class="card-img-top" alt=".." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a target="_blank"  href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rotate" >
+                <img src="./Resources/images/all.jpg" class="card-img-top" alt=".." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a target="_blank"  href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rotate" >
+                <img src="./Resources/images/all.jpg" class="card-img-top" alt=".." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a target="_blank"  href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <a href="blog.html">
+          <button type="button" class="btn btn-light btn-lg btn-block">Read More</button></a>
+        </div>
+      </main>
+      <!-- main -->
+    </div>
+    <!-- Home end -->
+
+      <!-- Footer -->
+      
+      <!-- Footer End -->
+         <!-- CC -->
+    <div class="cc">
+      <div class="container-fluid">
+        <p>COPYRIGHT</p>
+      </div>
+    </div>
+      <!-- CC End-->
+    <!-- Scripts -->
+
+    <!--  -->
+<script>
+// back to top btn js 
+
+
+const backToTopButton = document.getElementById("back-to-top");
+
+// Show the button when the user scrolls down a certain amount
+window.addEventListener("scroll", function() {
+    if (document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+});
+
+// Function for smooth scrolling to the top
+function scrollToTop() {
+    const smoothScrollToTop = () => {
+        const currentPosition = document.documentElement.scrollTop;
+        if (currentPosition > 0) {
+            window.requestAnimationFrame(smoothScrollToTop);
+            window.scrollTo(0, currentPosition - currentPosition / 10);
+        }
+    };
+    smoothScrollToTop();
+}
+
+// Scroll to the top smoothly when the button is clicked
+backToTopButton.addEventListener("click", scrollToTop);
+
+
+
+//
+
+          function simulateSideEffect() {
+            const box = document.getElementById('body');
+            const route = window.location.pathname;
+            if(route !== "!index.html"){
+             console.log("ok");
+            }else{
+              window.location.href = 'error.html';
+            }
+           
+        }
+
+        // Use setTimeout to simulate a delayed side effect
+        setTimeout(simulateSideEffect, 2000);
+</script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.5/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/15a0e7cd00.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+  
+  </body>
+</html>

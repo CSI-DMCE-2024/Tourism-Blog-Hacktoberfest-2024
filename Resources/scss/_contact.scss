@@ -1,0 +1,96 @@
+.contact {
+  .navbar {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(212, 212, 212);
+    box-shadow: 0 2px 20px 1px rgba(167, 167, 167, 0.801);
+    height: 5rem;
+    .navbar-brand {
+      margin: -17px;
+      padding: 0;
+    }
+    ul {
+      .active:after {
+        background-color: black;
+      }
+      li {
+        a {
+          color: black;
+          &:after {
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    margin: 0;
+    padding: 0 2rem;
+    margin: 7rem 0 2rem 0;
+  }
+
+  .address {
+    background: rgb(84, 0, 220);
+    background: linear-gradient(
+      180deg,
+      rgba(84, 0, 220, 1) 16%,
+      rgba(23, 0, 61, 1) 94%
+    );
+    padding-top: 0.5rem;
+    color: #fff;
+    border: 1px solid rgb(36, 0, 126);
+    box-shadow: 0 0 10px rgba(45, 73, 120, 0.442);
+
+    .container-fluid {
+      margin: 0;
+      padding: 0;
+      margin-top: 1rem;
+
+      iframe {
+        height: 60vh;
+      }
+
+      address {
+        text-align: center;
+        padding: 0 0.5rem;
+        padding-top: 2rem;
+        font-size: 1.2rem;
+        span {
+          font-weight: 600;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .con {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(23, 0, 61, 1);
+    color: white;
+    .row {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      padding: 1rem 0;
+      text-align: center;
+      font-size: 2rem;
+      .col-md {
+        padding: 0.5rem 0;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-family: "Courier New", Courier, monospace;
+        }
+      }
+    }
+  }
+}
+
+.fa-phone:before {
+  margin: 0 0.5rem;
+}
+
+.fa-envelope:before {
+  margin: 0 0.5rem;
+}
