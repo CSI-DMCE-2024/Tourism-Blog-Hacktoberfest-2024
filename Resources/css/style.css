@@ -324,6 +324,26 @@ h2 {
   font-weight: 300;
   margin: 0 0 40px; }
 
+.content{
+  position: relative;
+  z-index: 2;
+  background: #13232f13;
+  color: #ffffff;
+  border-radius: 6px;
+  margin: 0 0 15px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.021);
+  font-size: 5 rem }
+
+.content:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 31px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #13232f transparent; }
+
 label {
   position: absolute;
   transform: translateY(6px);
