@@ -12,10 +12,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./Resources/css/style.css" />
+    <link rel="stylesheet" href="./Resources/scss/signup.scss" />
     <link rel="shortcut icon" href="./Resources/images/earth.png" type="image/x-icon">
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-sm style="z-index: 999;" style="background-color: #2d3e4b;">
+    <nav class="navbar fixed-top navbar-expand-sm style="z-index: 999; style="background-color: #2d3e4b;">
         <a class="navbar-brand" href="index.html"
           ><img
             style="width: 4rem"
@@ -54,6 +55,31 @@
       </nav>
       <!--signup and login form -->
    <!-- tab-content -->
+    <!-- SIGNUP AND LOGIN SECTION STARTS HERE! -->
+    <div class="form-container">
+      <div class="form-box">
+          <div class="button-box">
+              <button id="signupBtn" class="toggle-btn" id="sign">Sign Up</button>
+              <button id="loginBtn" class="toggle-btn" id="log">Log In</button>
+          </div>
+          <form id="signupForm" class="input-group">
+            <div class="name-flex">
+              <input type="text" class="input-field" placeholder="First Name" required>
+              <input type="text" class="input-field" placeholder="Last Name" required>
+            </div>
+              
+              <input type="email" class="input-field" placeholder="Email Address" required>
+              <input type="password" class="input-field" placeholder="Set A Password" required>
+              <button type="submit" class="submit-btn">GET STARTED</button>
+          </form>
+
+          <form id="loginForm" class="input-group" style="display: none;">
+              <input type="email" class="input-field" placeholder="Email Address" required>
+              <input type="password" class="input-field" placeholder="Enter Password" required>
+              <button type="submit" class="submit-btn">LOG IN</button>
+          </form>
+      </div>
+  </div>
         
   </div> <!-- /form -->
   <div id="back-to-top">
@@ -63,6 +89,37 @@
   <!-- Scripts -->
   <script>
     // back to top btn js 
+document.getElementById("signupBtn");
+document.getElementById("loginBtn");
+document.getElementById("signupForm");
+document.getElementById("loginForm");
+
+signupBtn.addEventListener("click",()=>{
+  signupForm.style.display="block";
+  loginForm.style.display="none";
+
+  signupBtn.classList.add("active");
+  loginBtn.classList.remove("active");
+});
+
+signupBtn.addEventListener("mouseover",()=>{
+  signupBtn.classList.add("active");
+  loginBtn.classList.remove("active");
+});
+
+loginBtn.addEventListener("click",()=>{
+  loginForm.style.display="block";
+  signupForm.style.display="none";
+
+  loginBtn.classList.add("active");
+  signupBtn.classList.remove("active");
+});
+
+loginBtn.addEventListener("mouseover",()=>{
+  loginBtn.classList.add("active");
+  signupBtn.classList.remove("active");
+})
+
 
 
 const backToTopButton = document.getElementById("back-to-top");
