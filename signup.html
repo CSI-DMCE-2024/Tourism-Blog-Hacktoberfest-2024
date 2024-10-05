@@ -21,47 +21,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-sm style="z-index: 999;" style="background-color: #2d3e4b;">
-        <a class="navbar-brand" href="index.html"
-          ><img 
-          style="padding-left: 1.25rem; width: 4rem; transition: transform 0.3s ease;" 
-          src="./Resources/images/earth.png" 
-          alt="logo" 
-          onmouseover="this.style.transform='scale(1.1)'" 
-          onmouseout="this.style.transform='scale(1)'"
-        />
-      </a>
-      <h2 style="margin: 0; padding-left: 1.5rem; font-size: 2rem; color: white; font-family: 'Lemonada', cursive; font-weight: bold; font-style: italic; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Tourism Blogs</h2>
-        <button
-          class="navbar-toggler bg-transparent text-light"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon text-danger"><i class="fa fa-bars"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-md-auto">
-            <li class="nav-item">
-              <a class="nav-link1" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link1" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link1" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link1 active" href="signup.html">Login</a>
-            </li>
-          </ul>
+    
+    <nav class="navbar fixed-top navbar-expand-sm" style="z-index: 999; background-color: #333;">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-container d-flex align-items-center">
+          <img 
+            style="padding-left: 1.25rem; width: 4rem; transition: transform 0.3s ease;" 
+            src="./Resources/images/earth.png" 
+            alt="logo" 
+          />
+          <h2 style="margin: 0; padding-left: 1.5rem; font-size: 2rem; color: white; font-family: 'Lemonada', cursive; font-weight: bold; font-style: italic; transition: transform 0.3s ease;">
+            Tourism Blogs
+          </h2>
         </div>
-      </nav>
+      </a>
+      
+      <div class="ml-auto d-flex">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="signup.html" class="nav-link">Login</a>
+      </div>
+    </nav>
       <!--signup and login form -->
    <!-- tab-content -->
         <!-- LOGIN AND SIGNUP PAGE BEGINS HERE -->

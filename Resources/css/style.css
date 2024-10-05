@@ -9,7 +9,52 @@ body {
   background-color: rgba(243, 243, 243, 0.39);
 }
 
-.contact .navbar {
+
+.navbar {
+  background-color: #1a1a1a; /* Replace with your desired color */
+}
+
+.nav-link {
+  margin-right: 1rem; /* Add space between links */
+  text-decoration: none; /* Remove default underline */
+  color: white; /* Set default text color */
+  transition: text-decoration 0.3s ease, color 0.3s ease; /* Smooth transition for hover and focus */
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #ddd; /* Change color on hover */
+}
+
+.nav-link:focus,
+
+
+
+.brand-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  transition: transform 0.3s ease;
+}
+
+.brand-container:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.brand-container img {
+  padding-left: 1.25rem; /* Adjust as necessary */
+  width: 4rem; /* Keep this as is or adjust */
+}
+
+.brand-container h2 {
+  margin: 0; 
+  padding-left: 1.5rem; 
+  font-size: 2rem; 
+  font-family: 'Lemonada', cursive; 
+  font-weight: bold; 
+  font-style: italic; 
+}
+
+/* .contact .navbar {
   background-color: white;
   border-bottom: 2px solid #d4d4d4;
   box-shadow: 0 2px 20px 1px rgba(167, 167, 167, 0.801);
@@ -27,7 +72,7 @@ body {
 }
 .contact .navbar ul li a:after {
   background-color: black;
-}
+} */
 
 .contact .container {
   margin: 0;
@@ -93,7 +138,7 @@ body {
   margin: 0 0.5rem;
 }
 
-.blog .navbar {
+/* .blog .navbar {
   background-color: white;
   border-bottom: 2px solid #d4d4d4;
   box-shadow: 0 2px 20px 1px rgba(167, 167, 167, 0.801);
@@ -111,7 +156,7 @@ body {
 }
 .blog .navbar ul li a:after {
   background-color: black;
-}
+} */
 
 .blog .main .container {
   margin: 0 auto;
@@ -288,7 +333,7 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
-  .blog .navbar .navbar-brand,
+  /* .blog .navbar .navbar-brand,
   .contact .navbar .navbar-brand,
   .home .navbar .navbar-brand {
     margin: -17px;
@@ -319,7 +364,7 @@ body {
   .contact .navbar ul li a:after,
   .home .navbar ul li a:after {
     background-color: transparent;
-  }
+  } */
 }
 
 *,
@@ -346,9 +391,9 @@ a:hover {
   color: #179b77;
 }
 
-.navbar-expand-sm .navbar-nav .nav-link1 {
+/* .navbar-expand-sm .navbar-nav .nav-link1 {
   color: white;
-}
+} */
 
 .form {
   background: rgba(19, 35, 47, 0.9);
@@ -510,7 +555,7 @@ textarea {
   text-align: right;
 }
 
-.navbar {
+/* .navbar {
   padding: 0;
   margin: 0;
   height: 5.5rem;
@@ -549,7 +594,7 @@ textarea {
 }
 .navbar ul li a:hover:after {
   width: 100%;
-}
+} */
 
 .slide .carousel-item img {
   filter: brightness(0.5);
