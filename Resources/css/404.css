@@ -16,23 +16,28 @@ body {
 }
 
 .error-page {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
     padding: 50px;
     border-radius: 10px;
     text-align: center;
     animation: fadeIn 2s ease-in-out;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Added transition for hover effect */
 }
 
 .error-page:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Shadow effect on hover */
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    /* Shadow effect on hover */
 }
 
 h1 {
     font-size: 8rem;
     font-weight: 700;
-    color: #00ffcc; /* Neon light turquoise */
+    color: #00ffcc;
+    /* Neon light turquoise */
     margin-bottom: 20px;
     text-shadow: 0 0 15px rgba(0, 255, 204, 0.7);
 }
@@ -68,6 +73,7 @@ p {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
