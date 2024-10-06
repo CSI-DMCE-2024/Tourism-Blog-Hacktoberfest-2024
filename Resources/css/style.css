@@ -771,17 +771,6 @@ ul{
   justify-content: space-between;
 }
 
-nav ul {
-  list-style: none;
-  padding: auto;
-}
-
-nav ul li {
-  
-  display: none;
-  margin-right: 15px;
-}
-
 footer li a{
   color: white;
 }
