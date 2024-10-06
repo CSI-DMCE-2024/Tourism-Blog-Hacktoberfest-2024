@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -31,6 +31,7 @@
           onmouseout="this.style.transform='scale(1)'"
         />
         </a>
+        <h2 style="margin: 0; padding-left: 1.5rem; font-size: 2rem; color: black; font-family: 'Lemonada', cursive; font-weight: bold; font-style: italic; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Tourism Blogs</h2>
         <button
           class="navbar-toggler"
           type="button"
@@ -64,44 +65,67 @@
         </div>
       </nav>
       <!-- Nav End -->
-
-      <!-- Contact us -->
-     
-      <!--  -->
-
-      <div class="address">
-        <div class="container-fluid mx-auto">
-          <h1 style="text-align: center; padding-bottom: 1rem">Address</h1>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.2256352292443!2d72.9690624040702!3d19.226906893022814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b95e68139577%3A0x721a4279514b50d4!2sHiranandani%20Meadows%2C%20Gladys%20Alwares%20Road%2C%20Off%20Pokhran%20Road%20No%202%2C%20Thane%20H.o.%20(east)%2C%20Manpada%2C%20Thane%20West%2C%20Thane%2C%20Maharashtra%20400601!5e0!3m2!1sen!2sin!4v1623170921263!5m2!1sen!2sin"
-            width="100%"
-            height="100%"
-            style="border: 0"
-          ></iframe>
-          <div>
-            <address style="padding-bottom: 2rem">
-              <span>Office:</span> Hiranandani Meadows Gladys Alwares Road, Off
-              Pokhran Road No 2, Thane H.o. (east), Manpada, Thane West, Thane,
-              Maharashtra 400601
-            </address>
+      <!-- Contact us Start -->
+      <div class="contact-page">
+        <div class="intro-section">
+            <h1>Share Your Adventures with Us!</h1>
+            <p>Send Your Travel Photos & Reach Out for Top Destination Tips</p>
+            <button id="scrollToContact">Send Us A Message!</button>
+        </div>
+        <div class="contact-form">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="icon"><span>📞</span></div>
+                    <p>Phone No.: +91956564xxxx</p>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><span>📧</span></div>
+                    <p>Email: tourismblog@mail.com</p>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><span>🌐</span></div>
+                    <p>Website: www.tourismblog.com<</p>
+                </div>
+            </div>
+    
+            <div class="contact-container">
+              <h2>Send Us A Message!</h2>
+              <p>Please Include Your Information so that we may contact you back!</p>
+              <form>
+                <div class="bentorow">
+                  <input type="text" placeholder="Your Name" required>
+                  <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="bentorow">
+                  <input type="phoneno" placeholder="Your Number" required>
+                  <input type="text" placeholder="Subject" required>
+                </div>
+                <textarea placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+              </form>
+            </div>
           </div>
+        <div class="address">
+            <div class="container-fluid mx-auto">
+                <h1 style="text-align: center; padding-bottom: 1rem">Find Us On The Map!</h1>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.2256352292443!2d72.9690624040702!3d19.226906893022814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b95e68139577%3A0x721a4279514b50d4!2sHiranandani%20Meadows%2C%20Gladys%20Alwares%20Road%2C%20Off%20Pokhran%20Road%20No%202%2C%20Thane%20H.o.%20(east)%2C%20Manpada%2C%20Thane%20West%2C%20Thane%2C%20Maharashtra%20400601!5e0!3m2!1sen!2sin!4v1623170921263!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                ></iframe>
+                <div>
+                    <address style="padding-bottom: 2rem">
+                    <span>Office:</span> Hiranandani Meadows Gladys Alwares Road, Off
+                    Pokhran Road No 2, Thane H.o. (east), Manpada, Thane West, Thane,
+                    Maharashtra 400601
+                    </address>
+                </div>
+            </div>
         </div>
       </div>
+      <!--Contact Us End -->
 
-      <div class="con">
-     <div class="row">
-       <div class="col-md">
-         <a href="tel:956545xxx">
-         <i class="fa fa-phone" aria-hidden="true">  956545xxx</i>
-        </a>
-       </div>
-       <div class="col-md">
-        <a href="mailto:abc@xyz.com">
-        <i class="fa fa-envelope" aria-hidden="true">  abc@xyz.com</i>
-        </a>
-       </div>
-     </div>
-    </div>
 
     </div>
 
@@ -170,6 +194,41 @@
 
     <!-- Scripts -->
     <script>
+      document.getElementById('scrollToContact').addEventListener('click', function() {
+        document.querySelector('.contact-form').scrollIntoView({ behavior: 'smooth' });
+        });
+        // JavaScript code for button click animation
+        document.addEventListener("DOMContentLoaded", function () {
+          const contactContainer = document.querySelector('.contact-container');
+          const contactItems = document.querySelectorAll('.contact-item');
+          const sendButton = document.getElementById('scrollToContact');
+      
+          // Initially hide contact container and items
+          contactContainer.style.transform = 'translateX(-100%)';
+          contactContainer.style.opacity = '0';
+          contactItems.forEach(item => {
+              item.style.opacity = '0'; // Initially hide items
+          });
+      
+          sendButton.addEventListener('click', function (event) {
+              event.preventDefault(); // Prevent default action if it's in a form
+      
+              // Animate the contact container
+              contactContainer.style.transition = 'transform 2s ease, opacity 2s ease';
+              contactContainer.style.transform = 'translateX(0)';
+              contactContainer.style.opacity = '1';
+      
+              // Wait for the container animation to finish before starting the items
+              setTimeout(() => {
+                  contactItems.forEach((item, index) => {
+                      setTimeout(() => {
+                          item.style.transition = 'opacity 2s ease';
+                          item.style.opacity = '1'; // Animate each item with a delay
+                      }, index * 100); // 0.1 seconds delay for each item
+                  });
+              }, 500); // Delay to start items after container animation (0.5 seconds)
+          });
+      });
       // back to top btn js 
 
 
