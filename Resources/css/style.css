@@ -9,6 +9,13 @@ body {
   background-color: rgba(243, 243, 243, 0.39);
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: white; /* Change to your desired color */
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: white; /* Ensure the toggle icon is visible */
+}
 .contact .navbar {
   background-color: white;
   border-bottom: 2px solid #d4d4d4;

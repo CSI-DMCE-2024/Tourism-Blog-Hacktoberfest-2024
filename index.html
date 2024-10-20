@@ -10,41 +10,54 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
   <link rel="stylesheet" href="./Resources/css/style.css" />
   <link rel="shortcut icon" href="./Resources/images/LOGO_TOURISM.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body id="body">
   <div class="home" id="top">
     <!-- Nav -->
-    <nav class="navbar navbar-expand-sm" style="position: absolute; z-index: 999">
-
-      <a class="navbar-brand" href="index.html"><img
-          style="padding-left: 1.25rem; width: 4rem; transition: transform 0.3s ease;"
-          src="./Resources/images/LOGO_TOURISM.png" alt="logo" onmouseover="this.style.transform='scale(1.1)'"
-          onmouseout="this.style.transform='scale(1)'" />
+    <nav class="navbar navbar-expand-sm" style="position: absolute; z-index: 999; background-color: transparent;">
+      <a class="navbar-brand" href="index.html">
+          <img
+              style="padding-left: 1.25rem; width: 4rem; transition: transform 0.3s ease;"
+              src="./Resources/images/LOGO_TOURISM.png" alt="logo" 
+              onmouseover="this.style.transform='scale(1.1)'" 
+              onmouseout="this.style.transform='scale(1)'" />
       </a>
       <button class="navbar-toggler bg-transparent text-light" type="button" data-toggle="collapse"
-        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-danger"><i class="fa fa-bars"></i></span>
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-danger"><i class="fa fa-bars"></i></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-md-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home <span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="signup.html">Login</a>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Contact Us
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="email.html">Email Us</a>
+                      <a class="dropdown-item" href="location.html">Our Location</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="support.html">Support</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="signup.html">Login</a>
+              </li>
+          </ul>
       </div>
-          
-    </nav>
+  </nav>
     <!-- Nav End -->
 
     <!-- slide -->
